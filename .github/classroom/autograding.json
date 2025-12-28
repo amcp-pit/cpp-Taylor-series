@@ -3,7 +3,7 @@
     {
       "name": "Test 1",
       "setup": "",
-      "run": "./taylorseries output.txt &&  numdiff -a 1.0e-5 -q output.txt tests/test1.txt",
+      "run": "timeout 1 ./taylorseries output.txt &&  numdiff -a 1.0e-5 -q output.txt tests/test1.txt",
       "input": "0 1.0 0.2 1e-6",
       "output": "",
       "comparison": "include",
@@ -13,7 +13,7 @@
     {
       "name": "Test 2",
       "setup": "",
-      "run": "./taylorseries output.txt &&  numdiff -a 1.0e-5 -q output.txt tests/test2.txt",
+      "run": "timeout 1 ./taylorseries output.txt &&  numdiff -a 1.0e-5 -q output.txt tests/test2.txt",
       "input": "-1.0 1.0 0.1 1e-6",
       "output": "",
       "comparison": "include",
@@ -23,7 +23,7 @@
     {
       "name": "Test 3",
       "setup": "",
-      "run": "./taylorseries output.txt &&  numdiff -a 1.0e-5 -q output.txt tests/test3.txt",
+      "run": "timeout 1 ./taylorseries output.txt &&  numdiff -a 1.0e-5 -q output.txt tests/test3.txt",
       "input": "-2.0 2.0 0.3 1e-6",
       "output": "",
       "comparison": "include",
@@ -33,7 +33,7 @@
     {
       "name": "Test 4",
       "setup": "",
-      "run": "./taylorseries output.txt &&  numdiff -a 1.0e-8 -q output.txt tests/test4.txt",
+      "run": "timeout 1 ./taylorseries output.txt &&  numdiff -a 1.0e-8 -q output.txt tests/test4.txt",
       "input": "-1.0 1.0 0.03 1e-9",
       "output": "",
       "comparison": "include",
@@ -43,7 +43,7 @@
     {
       "name": "Test 5",
       "setup": "",
-      "run": "./taylorseries output.txt &&  numdiff -a 1.0e-11 -q output.txt tests/test5.txt",
+      "run": "timeout 1 ./taylorseries output.txt &&  numdiff -a 1.0e-11 -q output.txt tests/test5.txt",
       "input": "-1.0 1.1 0.03 1e-12",
       "output": "",
       "comparison": "include",
